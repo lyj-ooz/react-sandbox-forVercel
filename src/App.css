@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  color: #000;
+}
+
+/* coin-search */
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.coin-input {
+  padding-left: 16px;
+  width: 300px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 10px;
+  border-image-slice: 1;
+  /* background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  ); */
+  border-image-source: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+}
+
+.coin-input::placeholder {
+  color: #333;
+}
+
+.coin-input:focus {
+  outline: 0;
+}
+
+/* coin-data-num */
+.coin-data-num {
+  width: 900px;
+  margin-bottom: 10px;
+}
+
+.coin-data-num select {
+  padding: 5px 8px;
+  margin-right: 8px;
+}
+
+/* coin-loading */
+.coin-loading {
+  font-size: 42px;
+  font-weight: 600;
+  color: #000;
+}
